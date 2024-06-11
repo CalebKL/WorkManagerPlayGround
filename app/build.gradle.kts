@@ -37,7 +37,7 @@ android {
     compose = true
   }
   composeOptions {
-    kotlinCompilerExtensionVersion = "1.5.1"
+    kotlinCompilerExtensionVersion = "1.5.14"
   }
   packaging {
     resources {
@@ -64,5 +64,6 @@ dependencies {
   debugImplementation(libs.androidx.ui.tooling)
   debugImplementation(libs.androidx.ui.test.manifest)
   implementation(libs.androidx.work.runtime.ktx)
-  implementation(libs.coil)
+  implementation(libs.coil.compose)
+  implementation(libs.androidx.runtime.livedata)
 }
